@@ -1,6 +1,6 @@
 #ifndef GRAPH_TRAVERSALS_H
 #define GRAPH_TRAVERSALS_H
-#include "data_structures.h" // Uses Singly Linked List
+#include "data_structures.h"
 
 void bfs_demo(void);
 void dfs_demo(void);

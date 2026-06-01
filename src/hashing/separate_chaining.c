@@ -1,4 +1,4 @@
-#include "data_structures.h" // Uses Singly Linked List
+#include "data_structures.h" // Includes sll.h
 #include "hash.h"
 #include "safe_input.h"
 #include <stdio.h>

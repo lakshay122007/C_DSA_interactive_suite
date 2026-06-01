@@ -1,4 +1,4 @@
-#include "data_structures.h" // Uses Arrays
+#include "data_structures.h" // Includes array.h
 #include "safe_input.h"
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,4 +1,4 @@
-#include "data_structures.h" // Uses Doubly Linked List
+#include "data_structures.h" // Includes dll.h
 #include <assert.h>
 #include <stdio.h>
 
