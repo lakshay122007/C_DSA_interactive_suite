@@ -174,8 +174,9 @@ void TBT_demo(void)
 
     for (int i = 0; i < tbt_capacity; i++)
     {
+        int val_status;
     retry_capacity:
-        int val_status = safe_input_int(
+        val_status = safe_input_int(
             &tbt_values[i],
             "\nEnter the value to insert: (between 1 and 100), enter '-1' to exit: ", 1, 100);
 
@@ -193,9 +194,9 @@ void TBT_demo(void)
 
     for (int i = 0; i < tbt_capacity; i++)
     {
-
+        int insert_status;
     retry:
-        int insert_status = insert_node_tbt(&root, tbt_values[i]);
+        insert_status = insert_node_tbt(&root, tbt_values[i]);
 
         switch (insert_status)
         {
