@@ -158,7 +158,7 @@ Graph traversals are implemented using:
 - An adjacency list representation
 - An explicit queue for BFS
 - An explicit stack for DFS
-- A priority queue for Dijkstra's shortest path algorithm
+- Dijkstra is implemented with a special `Edge` struct for weighted nodes 
 
 Both BFS and DFS are implemented **iteratively** (no recursion).
 
