@@ -32,6 +32,37 @@ TBTnode* create_node_tbt(int data)
     return node;
 }
 
+void preorder_tbt(TBTnode* node)
+{
+    if (node == NULL)
+        return;
+
+    TBTnode* curr = node;
+
+    while (curr != NULL)
+    {
+        printf("%d->", curr->data);
+
+        if (!curr->lthread)
+        {
+            curr = curr->left;
+        }
+        else if (!curr->rthread)
+        {
+            curr = curr->right;
+        }
+        else
+        {
+            while (curr != NULL && curr->rthread)
+                curr = curr->right;
+
+            if (curr != NULL)
+                curr = curr->right;
+        }
+    }
+    printf("end\n");
+}
+
 void inorder_tbt(TBTnode* node)
 {
     TBTnode* curr = leftmost(node);
@@ -231,5 +262,7 @@ void TBT_demo(void)
 
     printf("\ninorder traversal is: ");
     inorder_tbt(root);
+    printf("\npreorder traversal is: ");
+    preorder_tbt(root);
     destroy_tbt(root);
 }

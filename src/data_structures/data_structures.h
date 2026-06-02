@@ -113,6 +113,7 @@ typedef struct TBTnode
 } TBTnode;
 TBTnode* leftmost(TBTnode* node);
 TBTnode* create_node_tbt(int data);
+void preorder_tbt(TBTnode* node);
 void inorder_tbt(TBTnode* node);
 int insert_node_tbt(TBTnode** root_ref, int key);
 void destroy_tbt(TBTnode* node);
