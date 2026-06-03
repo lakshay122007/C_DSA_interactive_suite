@@ -125,6 +125,7 @@ If any test fails or Valgrind detects a memory error, the CI job fails automatic
 - Singly Linked List (SLL)
 - Doubly Linked List (DLL)
 - Circular Queue (array-based)
+- Double-Ended Queue (Deque) (array-based)
 - Stack (array-based / linked-list-based as required)
 - Binary Search Tree (BST)-recursive
 - Threaded Binary Tree (TBT)
