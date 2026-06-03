@@ -41,7 +41,7 @@ fmt:
 	find . \( -name "*.c" -o -name "*.h" \) -not -path "*/build/*" | xargs clang-format -i
 
 clean:
-	$(RM) $(TARGET)$(EXE) test_circ_queue$(EXE) test_bst$(EXE) test_search$(EXE) test_hash_func$(EXE) test_sll$(EXE) test_dll$(EXE) test_array$(EXE) test_stack$(EXE) test_tbt$(EXE) test_priority_queue$(EXE) test_scll$(EXE) test_simple_queue$(EXE) test_deque$(EXE) test_astar$(EXE)
+	$(RM) $(TARGET)$(EXE) $(TEST_BINS)
 
 valgrind:
 	for t in $(TEST_BINS); do \
