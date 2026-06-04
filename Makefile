@@ -141,6 +141,11 @@ FLOYD_WARSHALL_TEST_SRC = \
 	src/utils/safe_input_int.c \
 	tests/test_floyd_warshall.c
 
+KRUSKAL_TEST_SRC = \
+	src/graph_traversals/kruskal.c \
+	src/utils/safe_input_int.c \
+	tests/test_kruskal.c
+
 test_tbt:
 	$(CC) $(CFLAGS) $(TBT_TEST_SRC) -o test_tbt$(EXE)
 	./test_tbt$(EXE)
@@ -206,7 +211,11 @@ test_floyd_warshall:
 	$(CC) $(CFLAGS) $(FLOYD_WARSHALL_TEST_SRC) -o test_floyd_warshall$(EXE)
 	./test_floyd_warshall$(EXE)
 
-TEST_BINS=test_circ_queue test_bst test_search test_hash_func test_sll test_dll test_array test_stack test_tbt test_priority_queue test_scll test_simple_queue test_deque test_astar test_avl test_floyd_warshall
+test_kruskal:
+	$(CC) $(CFLAGS) $(KRUSKAL_TEST_SRC) -o test_kruskal$(EXE)
+	./test_kruskal$(EXE)
+
+TEST_BINS=test_circ_queue test_bst test_search test_hash_func test_sll test_dll test_array test_stack test_tbt test_priority_queue test_scll test_simple_queue test_deque test_astar test_avl test_floyd_warshall test_kruskal
 test: $(TEST_BINS)
 
 .PHONY: $(TARGET) $(TEST_BINS)

@@ -67,4 +67,15 @@ void floyd_warshall(int** graph, int V, int** dist, int** next);
 void print_floyd_warshall_solution(int** dist, int** next, int V);
 void floyd_warshall_demo(void);
 
+// Kruskal's MST algorithm prototypes
+typedef struct KruskalEdge
+{
+    int src;
+    int dest;
+    int weight;
+} KruskalEdge;
+
+void kruskal_mst(KruskalEdge* edges, int V, int E, KruskalEdge* mst_edges, int* mst_edge_count);
+void kruskal_demo(void);
+
 #endif

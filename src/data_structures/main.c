@@ -29,7 +29,7 @@ int main()
             "click 3 for sorting algorithms (the n^2 family) demo\n"
             "click 4 for advanced sorting algorithms demo\n"
             "click 5 for searching algorithms demo\n"
-            "click 6 for graph traversals (bfs/dfs/dijkstra/astar/floyd warshall) demo\n"
+            "click 6 for graph traversals (bfs/dfs/dijkstra/astar/floyd warshall/kruskal) demo\n"
             "click 7 for hashing algorithms demo\n"
             "enter choice : ",
             1, 7 // limits
