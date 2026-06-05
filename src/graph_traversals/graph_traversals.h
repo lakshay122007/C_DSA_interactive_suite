@@ -14,6 +14,9 @@ typedef struct Graph
 Graph* create_graph(int V);
 void add_edge_undirected(Graph* graph, int src, int dest);
 void free_graph(Graph* graph);
+void add_edge_directed_unweighted(Graph* graph, int src, int dest);
+void topological_sort_kahn(Graph* graph);
+void topological_sort_demo(void);
 
 // ------------------For dijkstra's algorithm----------------------
 
