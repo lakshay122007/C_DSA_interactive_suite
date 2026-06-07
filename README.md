@@ -6,29 +6,22 @@ A modular, console-based **Data Structures & Algorithms library** written entire
 
 This project emphasizes **conceptual clarity**, **low-level fundamentals**, and **explicit memory reasoning**. It is designed with an educational intent, allowing learners to observe, experiment with, and understand data structures and algorithms step-by-step through an interactive terminal-based interface.
 
-The codebase is structured as a reusable **DSA core**, with an interactive, console-driven **demo layer** built on top.
+The codebase is structured as a reusable **DSA library**, with an interactive, console-driven **demo layer** built on top.
 
 ---
 
 ## Table of Contents
-- [Future Work](#-future-work)
 - [Demos](#demos)
 - [Build Instructions](#build-instructions-recommended)
 - [Continuous Integration](#continuous-integration)
 - [Project Overview](#project-overview)
-- [Testing](#testing)
-- [Contributing](#contributing)
+- [Time Complexity](#time-complexity)
+- [Project Features](#project-features)
 - [License](#license)
 
 ---
 
-## Future Work
-- Minimum Spanning Tree (MST) module with Kruskal’s and Prim’s algorithms
-- Bellman-Ford algorithm for graphs with negative weights
-- A* Search algorithm with interactive demo
-
----
-
+## Demos
 
 ## Infix to Postfix and Postfix evaluation (step by step)
 
@@ -44,7 +37,7 @@ The codebase is structured as a reusable **DSA core**, with an interactive, cons
 
 ---
 
-## Build Instructions (Recommended)
+## Build Instructions
 
 This project includes a **Makefile** to simplify building across multiple directories.
 
@@ -67,54 +60,6 @@ This generates a single executable:
 ```bash
 make clean
 ```
-
----
-
-## Manual Build (Without Make)
-
-### Linux / macOS
-
-```bash
-gcc -Wall -Wextra -std=c11 -g \
--Isrc/data_structures \
--Isrc/expression_evaluation \
--Isrc/sorting_algorithms_n2 \
--Isrc/advanced_sorting_algorithms \
--Isrc/searching_algorithms \
--Isrc/graph_traversals \
--Isrc/hashing \
-src/data_structures/*.c \
-src/expression_evaluation/*.c \
-src/sorting_algorithms_n2/*.c \
-src/advanced_sorting_algorithms/*.c \
-src/searching_algorithms/*.c \
-src/graph_traversals/*.c \
-src/hashing/*.c \
--o dsa
-```
-
-### Windows
-
-```bash
-gcc -Wall -Wextra -std=c11 -g ^
--Isrc/data_structures ^
--Isrc/expression_evaluation ^
--Isrc/sorting_algorithms_n2 ^
--Isrc/advanced_sorting_algorithms ^
--Isrc/searching_algorithms ^
--Isrc/graph_traversals ^
--Isrc/hashing ^
-src/data_structures/*.c ^
-src/expression_evaluation/*.c ^
-src/sorting_algorithms_n2/*.c ^
-src/advanced_sorting_algorithms/*.c ^
-src/searching_algorithms/*.c ^
-src/graph_traversals/*.c ^
-src/hashing/*.c ^
--o dsa.exe
-```
-
-This mirrors exactly what the Makefile performs.
 
 ---
 
