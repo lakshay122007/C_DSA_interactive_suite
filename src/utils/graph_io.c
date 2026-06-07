@@ -276,3 +276,24 @@ Graph* load_graph_from_csv(const char* path)
     printf("\nLoaded graph from '%s' (%d vertices, %d edges).\n", path, V, E);
     return graph;
 }
+
+// Prints an unweighted graph as an adjacency list, one vertex per line. Each
+// row reuses sll_printlist to show that vertex's neighbour list, mirroring how
+// the hash-table buckets are already visualized in separate chaining.
+void print_graph(const Graph* graph)
+{
+    if (!graph)
+    {
+        printf("\nNo graph to display.\n");
+        return;
+    }
+
+    printf("\nAdjacency list (%d vertices):\n", graph->V);
+
+    for (int i = 0; i < graph->V; i++)
+    {
+        printf("vertex %d: ", i);
+        sll_printlist(graph->array[i]);
+        printf("\n");
+    }
+}

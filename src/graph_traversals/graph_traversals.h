@@ -5,6 +5,7 @@
 void bfs_demo(void);
 void dfs_demo(void);
 void graph_traversals_demo(void);
+void visualize_graph_demo(void);
 typedef struct Graph
 {
     int V;
@@ -14,6 +15,7 @@ typedef struct Graph
 Graph* create_graph(int V);
 void add_edge_undirected(Graph* graph, int src, int dest);
 void free_graph(Graph* graph);
+void print_graph(const Graph* graph);
 void add_edge_directed_unweighted(Graph* graph, int src, int dest);
 void topological_sort_kahn(Graph* graph);
 void topological_sort_demo(void);
